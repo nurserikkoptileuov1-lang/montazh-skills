@@ -1,7 +1,7 @@
-<title>7 Parts LED шамдар</title>
+<title>Seven Parts LED шамдар</title>
 <meta name="description" content="Deepal, Вілуч және Vantra LED шамдары: H4 және 9006, 150 Вт-қа дейін. Себетке жинап, WhatsApp арқылы тапсырыс беріңіз немесе Kaspi арқылы төлеңіз.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="7 Parts — LED шамдар">
+<meta property="og:title" content="Seven Parts — LED шамдар">
 <meta property="og:description" content="Төрт модель, 150 Вт-қа дейін, бағасы 12 000 ₸-ден.">
 <meta property="og:image" content="share.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -13,7 +13,8 @@
 <link rel="preload" as="image" href="race.jpg">
 <style>
 :root{
-  --bg:#0a0808; --bg2:#120e0e; --card:#151111; --ink:#f4efeb; --muted:#a59b94; --line:rgba(244,239,235,.11);
+  --bg:#070606; --bg2:#0e0d0d; --card:#121111;
+  --carbon:repeating-linear-gradient(45deg,rgba(255,255,255,.028) 0 2px,transparent 2px 6px),repeating-linear-gradient(-45deg,rgba(0,0,0,.55) 0 2px,transparent 2px 6px); --ink:#f4efeb; --muted:#a59b94; --line:rgba(244,239,235,.11);
   --red:#e10600; --red-hot:#ff2a1f; --red-glow:rgba(225,6,0,.38);
   --display:"Inter",system-ui,sans-serif; --text:"Inter",system-ui,sans-serif;
   --gut:clamp(16px,5.5vw,80px); --max:1280px; --nav:68px; --r:16px;
@@ -48,7 +49,7 @@ button{font:inherit;color:inherit;-webkit-user-select:none;user-select:none}
 .nav{position:fixed;inset:0 0 auto;z-index:30;height:calc(var(--nav) + env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px);background:rgba(10,8,8,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav .wrap{height:100%;display:flex;align-items:center;gap:28px}
 .logo{display:flex;align-items:center;gap:10px;font:900 20px/1 var(--display);text-transform:uppercase;text-decoration:none;letter-spacing:.02em}
-.logo__7{display:grid;place-items:center;width:34px;height:34px;border-radius:8px;background:var(--red);color:#fff;font:900 22px/1 var(--display)}
+.logo__7{display:grid;place-items:center;height:32px;padding:0 9px;border-radius:7px;background:var(--red);color:#fff;font:900 17px/1 var(--display);letter-spacing:-.02em}
 .logo__t{font:900 20px/1 var(--display);letter-spacing:-.02em}
 .nav__links{display:flex;gap:28px;margin-left:8px}
 .nav__links a{font:500 15px/1 var(--text);text-decoration:none;color:var(--muted);transition:color 160ms}
@@ -62,13 +63,13 @@ button{font:inherit;color:inherit;-webkit-user-select:none;user-select:none}
 .cart-btn.bump .cart-btn__n{animation:bump 360ms var(--ease-out)}
 @keyframes bump{40%{transform:scale(1.35)}}
 @media (max-width:900px){.nav__links{display:none}.cart-btn__label{display:none}}
-@media (max-width:640px){:root{--nav:60px}.nav .wrap{gap:10px}.logo__t{font-size:17px}}
+@media (max-width:640px){:root{--nav:60px}.nav .wrap{gap:10px}.logo{gap:7px}.logo__t{font-size:15px}.logo__7{font-size:14px;height:28px;padding:0 7px}.lang button{min-width:44px}}
 
 /* первый экран */
 .hero{position:relative;min-height:min(100svh,980px);display:grid;align-items:center;padding:calc(var(--nav) + 32px) 0 72px;overflow:hidden;isolation:isolate}
 .hero__race{position:absolute;inset:0;z-index:-3;background:url(race.jpg) center 40%/cover}
 .hero__race::after{content:"";position:absolute;inset:0;background:
-  radial-gradient(60% 70% at 72% 50%,rgba(225,6,0,.38),transparent 70%),
+  radial-gradient(45% 55% at 72% 55%,rgba(225,6,0,.26),transparent 70%),radial-gradient(120% 90% at 50% 120%,#000 30%,transparent 70%),
   linear-gradient(90deg,var(--bg) 4%,rgba(10,8,8,.45) 40%,rgba(10,8,8,.05) 70%,rgba(10,8,8,.45)),
   linear-gradient(180deg,rgba(10,8,8,.6),transparent 30%,transparent 65%,var(--bg))}
 .hero__word{position:absolute;z-index:-2;left:50%;top:50%;transform:translate(-50%,-50%);font:900 clamp(90px,19vw,300px)/1 var(--display);letter-spacing:.2em;padding-left:.2em;
@@ -117,7 +118,7 @@ button{font:inherit;color:inherit;-webkit-user-select:none;user-select:none}
 
 /* разделы */
 .section{position:relative;padding:clamp(80px,10vw,140px) 0;overflow:hidden}
-.section--alt{background:var(--bg2)}
+.section--alt{background:var(--carbon),linear-gradient(180deg,#0b0a0a,#121010 50%,#0b0a0a)}
 .bgword{position:absolute;right:-.1em;top:40px;font:900 clamp(90px,16vw,240px)/1 var(--display);letter-spacing:.2em;color:rgba(244,239,235,.035);white-space:nowrap;pointer-events:none;user-select:none}
 .head{position:relative;display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 48px;margin-bottom:44px}
 .head h2{margin:14px 0 0;font-size:clamp(40px,5.4vw,76px);line-height:.92}
@@ -127,7 +128,7 @@ button{font:inherit;color:inherit;-webkit-user-select:none;user-select:none}
 .grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
 @media (max-width:1100px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.grid4{gap:10px}}
-.prod{position:relative;display:flex;flex-direction:column;background:var(--card);border-radius:var(--r);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden;
+.prod{position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg,#151414,#0c0b0b);border-radius:var(--r);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden;
   transition:transform 260ms var(--ease-out),box-shadow 260ms var(--ease-out)}
 @media (hover:hover) and (pointer:fine){.prod:hover{transform:translateY(-3px);box-shadow:inset 0 0 0 1px rgba(225,6,0,.6),0 26px 60px -30px var(--red-glow)}.prod:hover .prod__img img{transform:scale(1.04)}}
 .prod__open{position:absolute;inset:0;z-index:1;border:0;background:none;cursor:pointer;border-radius:var(--r)}
@@ -135,7 +136,7 @@ button{font:inherit;color:inherit;-webkit-user-select:none;user-select:none}
 .prod__img img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease-out)}
 .prod__num{position:absolute;left:14px;top:8px;font:900 clamp(40px,4.6vw,64px)/1 var(--display);color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.6)}
 .prod__badge{position:absolute;right:12px;top:12px;padding:7px 11px;border-radius:999px;background:var(--red);color:#fff;font:800 12px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
-.prod__type{display:grid;place-items:center;height:100%;background:radial-gradient(60% 60% at 50% 50%,rgba(170,14,18,.85),transparent 75%),#0d0a0a}
+.prod__type{display:grid;place-items:center;height:100%;background:radial-gradient(60% 60% at 50% 45%,#3a3636,transparent 75%),#070606}
 .prod__type b{font:900 clamp(48px,7vw,104px)/1 var(--display)}
 .prod__body{display:flex;flex-direction:column;gap:10px;padding:18px 18px 20px;flex:1}
 .prod h3{margin:0;font:900 clamp(16px,1.5vw,20px)/1.15 var(--display);text-transform:uppercase}
@@ -155,7 +156,7 @@ button{font:inherit;color:inherit;-webkit-user-select:none;user-select:none}
 .guide{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:g;position:relative}
 @media (max-width:1100px){.guide{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.guide{grid-template-columns:1fr}}
-.guide article{padding:26px 24px 28px;border-top:3px solid var(--red);background:linear-gradient(180deg,rgba(225,6,0,.09),transparent 65%);border-radius:0 0 var(--r) var(--r)}
+.guide article{padding:26px 24px 28px;border-top:3px solid var(--red);background:linear-gradient(180deg,#1a1818,#0d0c0c 70%);box-shadow:inset 0 0 0 1px var(--line);border-radius:0 0 var(--r) var(--r)}
 .guide article::before{counter-increment:g;content:"0" counter(g);display:block;font:900 44px/1 var(--display);color:transparent;-webkit-text-stroke:1px rgba(244,239,235,.4)}
 .guide h3{margin:16px 0 8px;font:900 21px/1.15 var(--display);text-transform:uppercase}
 .guide p{margin:0;color:var(--muted);font-size:15px}
@@ -180,7 +181,7 @@ button{font:inherit;color:inherit;-webkit-user-select:none;user-select:none}
 .cart{display:grid;grid-template-columns:5fr 7fr;gap:48px;position:relative}
 .cart>*{min-width:0}
 @media (max-width:900px){.cart{grid-template-columns:1fr;gap:28px}}
-.panel{background:var(--card);border-radius:var(--r);box-shadow:inset 0 0 0 1px var(--line);padding:clamp(18px,3vw,32px)}
+.panel{background:linear-gradient(180deg,#161515,#0c0b0b);border-radius:var(--r);box-shadow:inset 0 0 0 1px var(--line);padding:clamp(18px,3vw,32px)}
 .cart__list{list-style:none;margin:0;padding:0}
 .cart__list li{display:grid;grid-template-columns:64px 1fr auto;gap:6px 14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
 .cart__list img{grid-row:span 2;width:64px;height:64px;border-radius:10px;object-fit:cover}
@@ -236,18 +237,18 @@ button{font:inherit;color:inherit;-webkit-user-select:none;user-select:none}
 .footer::before{content:"";position:absolute;inset:0;z-index:-1;background:url(race.jpg) center 60%/cover;opacity:.35;-webkit-mask-image:linear-gradient(transparent,#000 55%);mask-image:linear-gradient(transparent,#000 55%)}
 .footer__cta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px}
 .footer__cta h2{margin:0;font-size:clamp(32px,4vw,56px);line-height:.95;max-width:16ch}
-.footer__word{margin:56px 0 34px;font:900 clamp(60px,15.5vw,236px)/.85 var(--display);letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;
+.footer__word{margin:56px 0 34px;font:900 clamp(60px,15vw,230px)/.86 var(--display);letter-spacing:-.03em;text-transform:uppercase;white-space:nowrap;
   background:linear-gradient(180deg,var(--ink) 30%,rgba(225,6,0,.95));-webkit-background-clip:text;background-clip:text;color:transparent}
 .footer__legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;font-size:13px;color:var(--muted);padding-top:22px;border-top:1px solid var(--line)}
 .footer__legal a{color:var(--muted)}
-@media (max-width:640px){.footer__word{letter-spacing:.06em;font-size:16vw}}
+@media (max-width:640px){.footer__word{font-size:21vw}}
 
 [hidden]{display:none!important}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:1ms!important}html{scroll-behavior:auto}}
 </style>
 <header class="nav">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="7 Parts"><span class="logo__7">7</span><span class="logo__t">PARTS</span></a>
+    <a class="logo" href="#top" aria-label="Seven Parts"><span class="logo__7">SEVEN</span><span class="logo__t">PARTS</span></a>
     <nav class="nav__links" aria-label="Main">
       <a href="#catalog" data-t="nav.catalog">Каталог</a>
       <a href="#guide" data-t="nav.guide">Қалай таңдау</a>
@@ -344,9 +345,9 @@ button{font:inherit;color:inherit;-webkit-user-select:none;user-select:none}
       <h2 class="d" data-t="foot.h2">Көлігіңізге шам таңдап береміз</h2>
       <a class="btn btn--red" href="https://wa.me/" target="_blank" rel="noopener" data-wa-plain data-t="foot.cta">WhatsApp-қа жазу</a>
     </div>
-    <p class="footer__word" aria-hidden="true">7 PARTS</p>
+    <p class="footer__word" aria-hidden="true">SEVEN<br>PARTS</p>
     <div class="footer__legal">
-      <span>© 2026 7 Parts · WhatsApp: <span style="user-select:all;color:var(--ink)">+7 708 007 07 26</span></span>
+      <span>© 2026 Seven Parts · WhatsApp: <span style="user-select:all;color:var(--ink)">+7 708 007 07 26</span></span>
       <span data-t="foot.tm">Deepal, Вілуч және Vantra атаулары олардың иелеріне тиесілі</span>
       <span><span data-t="foot.photo">Фондағы фото</span>: <a href="https://commons.wikimedia.org/wiki/File:2015_Malaysian_GP_opening_lap.jpg" target="_blank" rel="noopener">Morio, Wikimedia Commons, CC BY-SA 4.0</a></span>
     </div>

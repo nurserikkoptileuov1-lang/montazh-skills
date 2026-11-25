@@ -21,7 +21,7 @@ var PRODUCTS = [
     text: { kk: 'Екі режимде де таза ақ жарық, 6000K-ге дейін — жол мен белгілер күндізгідей көрінеді. Қуаты 150 Вт, 12–24 В. Қорапта екі шам.',
             ru: 'Чистый белый свет в обоих режимах, до 6000K — дорога и разметка видны как днём. Мощность 150 Вт, 12–24 В. В коробке две лампы.' },
     specs: [['base', 'H4'], ['power', '150 Вт'], ['low', { kk: 'ақ', ru: 'белый' }], ['high', { kk: 'ақ, 6000K', ru: 'белый, 6000K' }], ['volt', '12–24 В'], ['block', { kk: 'бар', ru: 'есть' }], ['set', { kk: '2 шам', ru: '2 лампы' }]] },
-  { id: 'vantra-9006', name: 'Vantra VT F1', base: '9006', price: 14000, imgs: [],
+  { id: 'vantra-9006', name: 'Vantra VT F1', base: '9006', price: 14000, imgs: ['g-v9006-1.jpg', 'g-v9006-2.jpg'],
     meta: { kk: '9006 · 100 Вт · ақ', ru: '9006 · 100 Вт · белый' },
     text: { kk: 'Сол Vantra сериясы, 9006 (HB4) цокольге арналған. Бұл бір режимді шам: көбіне бөлек фаралардағы жақын жарыққа немесе тұман шамына қойылады. Қуаты 100 Вт, ақ жарық.',
             ru: 'Та же серия Vantra под цоколь 9006 (HB4). Это однорежимная лампа: обычно её ставят на ближний свет в раздельных фарах или в противотуманки. Мощность 100 Вт, белый свет.' },
@@ -180,7 +180,7 @@ function setLang(l) {
   document.querySelectorAll('[data-t]').forEach(function (e) { e.textContent = t(e.getAttribute('data-t')); });
   document.querySelectorAll('[data-t-label]').forEach(function (e) { e.setAttribute('aria-label', t(e.getAttribute('data-t-label'))); });
   document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
-  document.title = lang === 'ru' ? '7 Parts LED лампы' : '7 Parts LED шамдар';
+  document.title = lang === 'ru' ? 'Seven Parts LED лампы' : 'Seven Parts LED шамдар';
   store('sevenparts-lang', lang);
   renderCatalog(); renderCart(); if (current && sheet.classList.contains('open')) fillSheet();
 }
