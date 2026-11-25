@@ -1,13 +1,13 @@
 // ===== Настройки магазина =====
 // whatsapp: номер только цифрами, например 77001234567. kaspi: ссылка на оплату Kaspi.
-var SHOP = { whatsapp: '', kaspi: '' };
+var SHOP = { whatsapp: '77080070726', kaspi: '' };
 
 // ===== Товары =====
 var PRODUCTS = [
   { id: 'deepal', name: 'Deepal Power Boost', base: 'H4', price: 15000, imgs: ['g-deepal-1.jpg', 'g-deepal-2.jpg'],
     badge: { kk: 'Ең қуатты', ru: 'Самая мощная' },
     meta: { kk: 'H4 · 150 Вт · сары / ақ', ru: 'H4 · 150 Вт · жёлтый / белый' },
-    text: { kk: 'Мұндай қуатты шам сирек кездеседі: жарығы күшті әрі алысқа түседі. Жақын жарығы сары (3800K) — жаңбыр мен тұманда жақсы көрсетеді, алыс жарығы ақ (6000K). Жинақта сыртқы блок бар.',
+    text: { kk: 'Мұндай қуатты шам сирек кездеседі: жарығы күшті әрі алысқа түседі. Жақын жарығы сары (3800K) — жаңбыр мен тұманда жолды жақсы көрсетеді, алыс жарығы ақ (6000K). Жинақта сыртқы блок бар.',
             ru: 'Лампы такой мощности встречаются редко: свет сильный и бьёт далеко. Ближний свет жёлтый (3800K) — лучше видно в дождь и туман, дальний белый (6000K). В комплекте выносной блок.' },
     specs: [['base', 'H4'], ['power', '150 Вт'], ['low', { kk: 'сары, 3800K', ru: 'жёлтый, 3800K' }], ['high', { kk: 'ақ, 6000K', ru: 'белый, 6000K' }], ['block', { kk: 'бар', ru: 'есть' }], ['set', { kk: '2 шам', ru: '2 лампы' }]] },
   { id: 'viluch', name: 'Вілуч N2 PRO', base: 'H4', price: 12000, imgs: ['g-viluch-1.jpg', 'g-viluch-2.jpg'],
@@ -37,11 +37,11 @@ var SPEC_NAMES = {
 var RU = {
   'nav.catalog': 'Каталог', 'nav.guide': 'Как выбрать', 'nav.compare': 'Сравнение', 'nav.cart': 'Корзина',
   'hero.h1': 'лампы', 'hero.lead': 'Deepal, Вілуч и Vantra. Ближний и дальний свет в одной лампе, мощность до 150 Вт.',
-  'hero.cta': 'Выбрать лампы', 'hero.cta2': 'Сравнить',
+  'hero.cta': 'Выбрать лампы', 'hero.cta2': 'Корзина',
   'stat.power': 'максимальная мощность', 'stat.price': 'цена от', 'stat.kaspi': 'оплата онлайн',
-  'cat.h2': 'Каталог', 'cat.p': 'Цена за комплект. Нажмите на лампу, чтобы открыть фото и характеристики.',
+  'cat.h2': 'Каталог', 'cat.p': 'Цена за комплект (2 лампы). Нажмите на лампу, чтобы открыть фото и характеристики.',
   'guide.h2': 'Как выбрать', 'guide.p': 'Перед покупкой проверьте четыре вещи. Если сомневаетесь, напишите в WhatsApp марку машины.',
-  'g1.h': 'Цоколь', 'g1.p': 'Посмотрите на старую лампу или в инструкцию. В H4 ближний и дальний свет в одной лампе. 9006 — отдельная лампа одного режима.',
+  'g1.h': 'Цоколь', 'g1.p': 'Цоколь — это часть лампы, которой она вставляется в фару. Его видно на старой лампе или в инструкции к машине. В H4 ближний и дальний свет в одной лампе, 9006 — отдельная лампа одного режима.',
   'g2.h': 'Цвет света', 'g2.p': '3500–3800K — тёплый жёлтый свет, меньше отражается от дождя, снега и тумана. 6000K — белый, как днём, разметка видна чётче.',
   'g3.h': 'Мощность', 'g3.p': '150 Вт светят дальше и ярче, такие лампы встречаются редко. 50 Вт экономнее и меньше греются.',
   'g4.h': 'После установки', 'g4.p': 'Проверьте регулировку фар: светодиодная лампа ярче галогенной и без настройки слепит встречных водителей.',
@@ -49,20 +49,20 @@ var RU = {
   'cmp.model': 'Модель', 'cmp.base': 'Цоколь', 'cmp.power': 'Мощность', 'cmp.low': 'Ближний свет', 'cmp.high': 'Дальний свет',
   'cmp.volt': 'Напряжение', 'cmp.block': 'Выносной блок', 'cmp.price': 'Цена',
   'c.y3800': 'жёлтый, 3800K', 'c.y': 'жёлтый', 'c.w': 'белый', 'c.w1': 'белый, один режим', 'c.w6000': 'белый, 6000K', 'c.yes': 'есть', 'c.no': 'нет',
-  'cart.h2': 'Корзина', 'cart.p': 'Заказ уйдёт в WhatsApp со списком и суммой. Оплатить можно сразу через Kaspi.',
+  'cart.h2': 'Корзина', 'cart.p': 'Список и сумма заказа отправятся в WhatsApp. Оплатить можно сразу через Kaspi.',
   'cart.empty': 'Корзина пуста. Выберите лампы в каталоге.', 'cart.total': 'Итого',
   'cart.wa': 'Заказать через WhatsApp', 'cart.kaspi': 'Оплатить через Kaspi',
   'cart.note': 'Получив заказ, мы свяжемся с вами и договоримся о доставке.',
   'foot.h2': 'Подберём лампы под вашу машину', 'foot.cta': 'Написать в WhatsApp',
   'foot.tm': 'Названия Deepal, Вілуч и Vantra принадлежат их владельцам', 'foot.photo': 'Фото на фоне',
   'btn.add': 'В корзину', 'btn.added': 'В корзине', 'sheet.buy': 'Купить сейчас', 'sheet.close': 'Закрыть', 'set': 'комплект',
-  'msg.hello': 'Здравствуйте! Хочу заказать:', 'msg.total': 'Итого', 'msg.ask': 'Здравствуйте! Хочу подобрать лампы для фар.',
+  'msg.hello': 'Здравствуйте! Хочу купить лампочки:', 'msg.total': 'Итого', 'msg.ask': 'Здравствуйте! Хочу купить лампочки.',
   'qty.minus': 'Убрать одну', 'qty.plus': 'Добавить ещё', 'open': 'Открыть'
 };
 var KK_EXTRA = {
   'btn.added': 'Себетте', 'sheet.close': 'Жабу', 'set': 'жинақ', 'open': 'Ашу',
-  'msg.hello': 'Сәлеметсіз бе! Тапсырыс бергім келеді:', 'msg.total': 'Барлығы',
-  'msg.ask': 'Сәлеметсіз бе! Фараға шам таңдағым келеді.', 'qty.minus': 'Біреуін алып тастау', 'qty.plus': 'Тағы біреу қосу'
+  'msg.hello': 'Сәлеметсіз бе! Лампочка алғым келеді:', 'msg.total': 'Барлығы',
+  'msg.ask': 'Сәлеметсіз бе! Лампочка алғым келеді.', 'qty.minus': 'Біреуін алып тастау', 'qty.plus': 'Тағы біреу қосу'
 };
 
 var KK = {}, lang = 'kk';
@@ -139,12 +139,12 @@ sheet.querySelector('[data-s-buy]').addEventListener('click', function () {
 
 // ===== Корзина =====
 var cart = {};
-try { cart = JSON.parse(store('farset-cart') || '{}') || {}; } catch (e) { cart = {}; }
+try { cart = JSON.parse(store('sevenparts-cart') || '{}') || {}; } catch (e) { cart = {}; }
 var list = document.querySelector('[data-cart-list]'), emptyEl = document.querySelector('[data-cart-empty]');
 var totalRow = document.querySelector('[data-cart-totalrow]'), totalEl = document.querySelector('[data-cart-total]');
 var waBtn = document.querySelector('[data-cart-wa]'), kaspiBtn = document.querySelector('[data-cart-kaspi]');
 var countEl = document.querySelector('[data-cart-count]'), cartBtn = document.querySelector('[data-cart-btn]');
-function save() { store('farset-cart', JSON.stringify(cart)); }
+function save() { store('sevenparts-cart', JSON.stringify(cart)); }
 function addToCart(id, btn) {
   cart[id] = (cart[id] || 0) + 1; save(); renderCart();
   cartBtn.classList.remove('bump'); void cartBtn.offsetWidth; cartBtn.classList.add('bump');
@@ -180,9 +180,9 @@ function setLang(l) {
   document.querySelectorAll('[data-t]').forEach(function (e) { e.textContent = t(e.getAttribute('data-t')); });
   document.querySelectorAll('[data-t-label]').forEach(function (e) { e.setAttribute('aria-label', t(e.getAttribute('data-t-label'))); });
   document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
-  document.title = lang === 'ru' ? 'Фарсет LED лампы' : 'Фарсет LED шамдар';
-  store('farset-lang', lang);
+  document.title = lang === 'ru' ? '7 Parts LED лампы' : '7 Parts LED шамдар';
+  store('sevenparts-lang', lang);
   renderCatalog(); renderCart(); if (current && sheet.classList.contains('open')) fillSheet();
 }
 document.querySelectorAll('.lang button').forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
-setLang(store('farset-lang') || 'kk');
+setLang(store('sevenparts-lang') || 'kk');
